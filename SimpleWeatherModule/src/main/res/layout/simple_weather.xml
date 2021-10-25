@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/lytWeather"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ddd"
+    android:baselineAligned="false"
+    android:orientation="vertical"
+    android:paddingStart="8dp"
+    android:paddingTop="8dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:layoutDirection="rtl"
+        android:orientation="horizontal"
+        android:padding="2dp">
+
+        <LinearLayout
+            android:layout_width="128dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--                        <TextView-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:text="@string/current_temp"-->
+            <!--                            android:textColor="#616161"-->
+            <!--                            android:textSize="16sp" />-->
+
+            <Spinner
+                android:id="@+id/spinnerCities"
+                style="@android:style/Widget.Holo.Light.Spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:entries="@array/iran_cities_fa"
+                android:layoutDirection="rtl"
+                android:spinnerMode="dialog"
+                android:textDirection="rtl" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <ProgressBar
+                android:id="@+id/progressBarWeather"
+                style="@android:style/Widget.Holo.Light.ProgressBar.Large"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="top"
+                    android:text="@string/degree"
+                    android:textColor="#222" />
+
+                <TextView
+                    android:id="@+id/txtCityTemp"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:fontFamily="@font/dseg_seven_modern_mini"
+                    android:gravity="center"
+                    android:text="@string/three_dot"
+                    android:textColor="#222"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgWeatherState"
+                android:layout_width="48dp"
+                android:layout_height="36dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginStart="16dp"
+                android:contentDescription="@string/three_dot" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <AnalogClock
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#333" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txt_banner_today_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:gravity="center"
+            android:text="@string/three_dot"
+            android:textColor="#222"
+            android:textDirection="rtl"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#999" />
+
+</LinearLayout>

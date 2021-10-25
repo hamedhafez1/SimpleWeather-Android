@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="current_temp">دمای فعلی</string>
+    <string name="three_dot">…</string>
+    <string name="degree">℃</string>
+    <string-array name="iran_cities_en">
+        <item>tehran</item>
+        <item>mashhad</item>
+        <item>isfahan</item>
+        <item>shiraz</item>
+        <item>tabriz</item>
+        <item>karaj</item>
+        <item>rasht</item>
+        <item>ardabil</item>
+        <item>kermanshah</item>
+        <item>ahvaz</item>
+        <item>yazd</item>
+        <item>kerman</item>
+        <item>bushehr</item>
+        <item>sari</item>
+        <item>gorgan</item>
+        <item>sanandaj</item>
+        <item>urmia</item>
+        <item>qazvin</item>
+        <item>zanjan</item>
+        <item>hamedan</item>
+        <item>arak</item>
+        <item>qom</item>
+        <item>khorramabad</item>
+        <item>ahvaz</item>
+        <item>semnan</item>
+        <item>bandar abbas</item>
+        <item>zahedan</item>
+        <item>ilam</item>
+        <item>shahr-e kord</item>
+        <item>yasuj</item>
+        <item>birjand</item>
+        <item>bojnurd</item>
+        <item>kish</item>
+        <item>qeshm</item>
+    </string-array>
+    <string-array name="iran_cities_fa">
+        <item>تهران</item>
+        <item>مشهد</item>
+        <item>اصفهان</item>
+        <item>شیراز</item>
+        <item>تبریز</item>
+        <item>کرج</item>
+        <item>رشت</item>
+        <item>اردبیل</item>
+        <item>کرمانشاه</item>
+        <item>اهواز</item>
+        <item>یزد</item>
+        <item>کرمان</item>
+        <item>بوشهر</item>
+        <item>ساری</item>
+        <item>گرگان</item>
+        <item>سنندج</item>
+        <item>ارومیه</item>
+        <item>قزوین</item>
+        <item>زنجان</item>
+        <item>همدان</item>
+        <item>اراک</item>
+        <item>قم</item>
+        <item>خرم آباد</item>
+        <item>اهواز</item>
+        <item>سمنان</item>
+        <item>بندرعباس</item>
+        <item>زاهدان</item>
+        <item>ایلام</item>
+        <item>شهرکرد</item>
+        <item>یاسوج</item>
+        <item>بیرجند</item>
+        <item>بجنورد</item>
+        <item>کیش</item>
+        <item>قشم</item>
+    </string-array>
+</resources>
