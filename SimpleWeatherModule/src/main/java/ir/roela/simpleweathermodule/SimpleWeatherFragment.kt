@@ -22,7 +22,7 @@ import java.net.URL
 import java.util.*
 import kotlin.math.roundToInt
 
-class SimpleWeatherFragment : Fragment() {
+class SimpleWeatherFragment(private val openWeatherMapApiKey: String) : Fragment() {
     private val TAG: String = this::class.java.simpleName
 
     private lateinit var txtCityTemp: TextView
@@ -155,9 +155,8 @@ class SimpleWeatherFragment : Fragment() {
     private fun getWeatherWebService() {
         try {
             if (isNetworkConnected(requireContext())) {
-                val apiKey = "a9bc40e37b9e8727e004e89d553ecb84"
                 val url =
-                    "https://api.openweathermap.org/data/2.5/weather?units=metric&lang=fa&q=$userCity&appid=$apiKey"
+                    "https://api.openweathermap.org/data/2.5/weather?units=metric&lang=fa&q=$userCity&appid=$openWeatherMapApiKey"
                 val queue = Volley.newRequestQueue(context)
                 val request = JsonObjectRequest(Request.Method.GET, url, null, {
                     try {

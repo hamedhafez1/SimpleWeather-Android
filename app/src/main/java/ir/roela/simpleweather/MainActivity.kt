@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
     private fun addWeatherFragment() {
         supportFragmentManager.beginTransaction()
             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN)
-            .add(R.id.fragment_container, SimpleWeatherFragment())
+            .add(R.id.fragment_container, SimpleWeatherFragment("OPEN_WEATHER_MAP_API_KEY"))
             .addToBackStack("weatherFragment")
             .commit()
     }
